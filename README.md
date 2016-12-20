@@ -16,7 +16,7 @@ Konvert is a Ruby command line gem that lets you convert between different curre
 
 2- Configure the currency rates with respect to a base currency (here EUR):
 
-    irb(main): Money.conversion_rates('EUR', {
+    irb(main): Konvert::Money.conversion_rates('EUR', {
         'USD'     => 1.11,
         'Bitcoin' => 0.0047
       })
@@ -42,9 +42,9 @@ Konvert is a Ruby command line gem that lets you convert between different curre
   
    5) Perform Comparisons (same currencies or in different currencies):  
     
-    irb(main): twenty_dollars == Money.new(20, 'USD')          # => true
-    irb(main): twenty_dollars == Money.new(30, 'USD')          # => false
-    irb(main): twenty_dollars > Money.new(5, 'USD')               # => true
+    irb(main): twenty_dollars == Konvert::Money.new(20, 'USD')          # => true
+    irb(main): twenty_dollars == Konvert::Money.new(30, 'USD')          # => false
+    irb(main): twenty_dollars > Konvert::Money.new(5, 'USD')               # => true
     irb(main): twenty_dollars < fifty_eur                                    # => true
     
  
