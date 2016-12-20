@@ -1,5 +1,4 @@
 module Konvert
-  require 'pry'
   require_relative '../lib/operations'
   class Money
     include Konvert::Operations
